@@ -1,0 +1,63 @@
+<!-- pages/tabBar/community/community.wxml -->
+<!-- <input placeholder=" 请输入关键词" class="search" /> -->
+<!-- <view class="header">
+    <ul>
+        <li>
+            <image src="../../../icon/community.png" />
+            关注
+        </li>
+        <li>
+            <image src="../../../icon/community.png" />
+            发现
+        </li>
+        <li>
+            <image src="../../../icon/community.png" />
+            消息
+        </li>
+    </ul>
+</view> -->
+<swiper indicator-dots="true" autoplay="true" circular="true" class="slideshow">
+    <swiper-item>
+        <image src="cloud://cloud1-1giobhbsfa27b2c2.636c-cloud1-1giobhbsfa27b2c2-1310275988/swiper1.jpg" bindtap="Jump1" />
+    </swiper-item>
+    <swiper-item>
+        <image src="cloud://cloud1-1giobhbsfa27b2c2.636c-cloud1-1giobhbsfa27b2c2-1310275988/swiper2.jpg"  bindtap="Jump2" />
+    </swiper-item>
+</swiper>
+<view class="banner" style="margin-bottom: 80rpx;">
+    <view class="row">
+        <ul>
+            <li>每日精选</li>
+            <li>
+                <image src="cloud://cloud1-1giobhbsfa27b2c2.636c-cloud1-1giobhbsfa27b2c2-1310275988/landscape1.jpg"  bindtap="Jump1" />
+            </li>
+        </ul>
+    </view>
+    <view class="row">
+        <ul>
+            <li>
+                <image src="cloud://cloud1-1giobhbsfa27b2c2.636c-cloud1-1giobhbsfa27b2c2-1310275988/landscape3.jpg" bindtap="Jump2" />
+            </li>
+            <li>人气榜单</li>
+        </ul>
+    </view>
+    <view class="row">
+        <ul>
+            <li>新品榜单</li>
+            <li>
+                <image src="cloud://cloud1-1giobhbsfa27b2c2.636c-cloud1-1giobhbsfa27b2c2-1310275988/landscape1.jpg" bindtap="Jump1" />
+            </li>
+        </ul>
+    </view>
+</view>
+<view style="margin-left: 25rpx;">最新发布</view>
+<view style="border-top:1px solid #e4e4e4" 
+wx:for="{{new3obj}}">
+  <view class="line" 
+  bindtap="toarticle" 
+  wx:for-index="index" 
+  data-index="{{index}}">
+    <view class="title">{{item.title}}</view>
+    <view class="subtitle">{{item.comment}}</view>
+  </view>
+</view>

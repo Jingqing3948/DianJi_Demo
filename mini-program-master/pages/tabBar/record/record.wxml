@@ -1,0 +1,48 @@
+
+<!-- pages/record/record.wxml -->
+<map id="map" subkey="DKEBZ-LKBW4-B3KUP-DYSCI-IG7OS-SQBJH" longitude='{{weidu}}' latitude='{{jingdu}}' scale="10" layer-style="1" show-location="true" markers="{{markers}}"></map>
+
+<button wx:if="{{recmode==0}}" class="btn1" size="default" bindtap='recstart' style="color: #2a3780">
+    开始记录
+</button>
+<button wx:if="{{recmode==1}}" class="btn1" size="default" bindtap="recstart" style="color: #2a3780">
+    添加标点
+</button>
+<button wx:if="{{recmode==1}}" class="btn2" size="default" bindtap="recstop" style="color: #802a2a">
+    结束记录
+</button>
+<!--pages/record/record.wxml-->
+<view style="width: 100%; height: 100%">
+  <map
+    id="map"
+    subkey="DKEBZ-LKBW4-B3KUP-DYSCI-IG7OS-SQBJH"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    scale="{{16}}"
+    markers="{{markers}}"
+    circles="{{circles}}"
+    polyline="{{polylines}}"
+    polygons="{{polygons}}"
+    enable-3D="{{enable3d}}"
+    show-location="{{showLocation}}"
+    show-compass="{{showCompass}}"
+    enable-zoom="{{enableZoom}}"
+    enable-rotate="{{enableRotate}}"
+    enable-satellite="{{enableSatellite}}"
+    enable-traffic="{{enableTraffic}}"
+    enable-overlooking="{{enableOverlooking}}"
+    enable-scroll="{{enableScroll}}"
+    layer-style="1"
+    >
+    </map>
+</view>
+
+  <button 
+  type="button"
+  class="btn1"
+  size="default"
+  bindtap="onClick"
+  style="color: #2a3780"
+>记录</button>
+
+

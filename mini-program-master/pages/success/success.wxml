@@ -1,0 +1,3 @@
+<!--pages/success/success.wxml-->
+<view class="center">文章发布成功！5s后自动跳转</view>
+<button class="btn" bindtap="tocommunity">在社区中查看</button>

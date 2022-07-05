@@ -1,0 +1,60 @@
+/* pages/addarticle/addarticle.wxss */
+.inputbox {
+  margin-top:60rpx;
+  height: 450rpx;
+}
+
+.inputbox .line {
+  display: block;
+  min-height:100rpx;
+  line-height:100rpx;
+  padding: 0 30rpx;
+  border-bottom:1px solid #e4e4e4;
+}
+
+.inputbox .line-content {
+  display: block;
+  min-height:300rpx;
+  line-height:160rpx;
+  padding: 0 30rpx;
+  border-bottom:1px solid #e4e4e4;
+}
+
+.inputbox .line label {
+  float: left;
+}
+
+.inputbox .line-content label {
+  float:left;
+}
+
+.inputbox .line input {
+  height:100rpx;
+  line-height:100rpx;
+  float: left;
+  margin-left:40rpx;
+}
+
+.inputbox .line-content input {
+  width:80%;
+  height:140rpx;
+  line-height: 140rpx;
+  float: left;
+  margin-left:40rpx;
+}
+
+.submit {
+  position: absolute;
+	width: 80%;
+	left: 0;
+	right: 0;
+	margin: 180rpx auto 0;
+  border-radius: 98rpx;
+  border: 3rpx solid rgb(0, 0, 167);
+  color:rgb(0, 0, 167);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+

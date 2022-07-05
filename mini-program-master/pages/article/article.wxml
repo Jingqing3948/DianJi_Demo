@@ -1,0 +1,7 @@
+<!-- pages/article/article.wxml -->
+<map id="map" subkey="DKEBZ-LKBW4-B3KUP-DYSCI-IG7OS-SQBJH" longitude='{{weidu}}' latitude='{{jingdu}}' scale="10" layer-style="1" show-location="true" markers="{{markers}}"></map>
+<view>
+    <view class="title">{{dataobj.title}}</view>
+    <view class="comment">{{dataobj.comment}}</view>
+    <view class="content">{{content}}</view>
+</view>

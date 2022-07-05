@@ -1,0 +1,41 @@
+/* pages/my/my.wxss */
+.user {
+	height: 300rpx;
+	background-color: rgb(251, 255, 192);
+	text-align: center;
+	line-height: 300rpx;
+}
+
+.subnav {
+  width: 90%;
+  margin: auto;
+	height: 400rpx;
+  background-color: rgb(205, 255, 124);
+  border-radius: 20rpx;
+}
+
+.subnav ul li {
+  display: block;
+  height: 100rpx;
+  /* border: 1rpx solid black; */
+  padding: 0 20rpx;
+  line-height: 100rpx;
+}
+
+.subnav ul li span{
+  float: right;
+}
+
+.last-nav {
+  width: 635rpx;
+  margin: 40rpx auto;
+  padding: 0 20rpx;
+	height: 100rpx;
+  background-color: rgb(124, 255, 152);
+  border-radius: 20rpx;
+  line-height: 100rpx;
+}
+
+.last-nav span{
+  float: right;
+}

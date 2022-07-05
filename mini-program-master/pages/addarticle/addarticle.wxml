@@ -1,0 +1,16 @@
+<!--pages/addarticle/addarticle.wxml-->
+<view class="inputbox">
+  <view class="line" style="border-top: 1px solid #e4e4e4;">
+    <label>题目</label>
+    <input placeholder=" 请输入题目" bindinput="inputtitle"/>
+  </view>
+  <view class="line">
+    <label>备注</label>
+    <input placeholder=" 请输入备注信息" bindinput="inputcomment" />
+  </view>
+  <view class="line-content">
+    <label>正文</label>
+    <input placeholder=" 请输入正文" class="content" bindinput="inputcontent" />
+  </view>
+</view>
+<button bindtap="submit" class="submit">提交</button>
